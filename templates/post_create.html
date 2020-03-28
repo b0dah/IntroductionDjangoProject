@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<!-- 		<meta charset="UTF-8"> -->
+		<title> Create a new post </title>
+	</head>
+	<body>
+		<h1> {{pageFunction}} post</h1>
+		<form method = "POST" action=""> {% csrf_token %}
+			{{form.as_p}}
+			<input type="submit" value="{{pageFunction}} Post">
+		</form>
+		
+	</body>
+</html>
